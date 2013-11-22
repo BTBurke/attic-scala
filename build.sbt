@@ -1,6 +1,6 @@
-name := "skeleton-vagrant-scala-sbt"
+name := "attic"
 
-organization := "io.underway"
+organization := "attic"
 
 version := "0.1.0-SNAPSHOT"
 
@@ -10,14 +10,14 @@ startYear := Some(2013)
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/BTBurke/skeleton-vagrant-scala-sbt"),
-    "scm:git:https://github.com/BTBurke/skeleton-vagrant-scala-sbt.git",
-    Some("scm:git:git@github.com:BTBurke/skeleton-vagrant-scala-sbt.git")
+    url("https://github.com/BTBurke/attic-scala"),
+    "scm:git:https://github.com/BTBurke/attic-scala.git",
+    Some("scm:git:git@github.com:BTBurke/attic-scala.git")
   )
 )
 
 /* scala versions and options */
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 crossScalaVersions := Seq(
 /*  "2.9.3-RC1",
@@ -63,20 +63,7 @@ javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "com.github.nscala-time" %% "nscala-time" % "0.4.2"
-  // -- network --
-  //,"net.databinder.dispatch" %% "dispatch-core" % "0.10.1"
-  // -- testing --
-  , "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
-  , "org.scalamock" %% "scalamock-scalatest-support" % "3.0.1" % "test" 
-  // -- Logging --
-  ,"ch.qos.logback" % "logback-classic" % "1.0.13"
-  // -- Akka --
-  ,"com.typesafe.akka" %% "akka-testkit" % "2.2.0-RC2" % "test"
-  ,"com.typesafe.akka" %% "akka-actor" % "2.2.0-RC2"
-  ,"com.typesafe.akka" %% "akka-slf4j" % "2.2.0-RC2"
-  // -- Sql --
-  ,"com.typesafe.slick" %% "slick" % "1.0.1"
+  "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
 )
 
 /* you may need these repos */
@@ -87,7 +74,7 @@ resolvers ++= Seq(
 )
 
 /* assembly plugin */
-mainClass in AssemblyKeys.assembly := Some("io.underway.skeleton-vagrant-scala-sbt.Main")
+mainClass in AssemblyKeys.assembly := Some("attic.Main")
 
 assemblySettings
 

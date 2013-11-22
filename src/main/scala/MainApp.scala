@@ -1,5 +1,5 @@
-package io.underway.skeletonvagrantscalasbt
+package attic
 
-object SkeletonvagrantscalasbtApp extends App {
+object AtticApp extends App {
     println("hello sbt.g8")
 }
