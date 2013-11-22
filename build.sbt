@@ -63,7 +63,7 @@ javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 
 /* dependencies */
 libraryDependencies ++= Seq (
-  "org.scalatest" % "scalatest_2.10" % "2.0.M5b" % "test"
+  "org.scalatest" % "scalatest_2.10" % "2.0.1-SNAP3" % "test"
 )
 
 /* you may need these repos */
